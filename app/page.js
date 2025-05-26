@@ -1,6 +1,7 @@
 import NavLogo from "../components/navLogo";
 import NavList from "../components/navList";
 import Welcome from "../components/welcome";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -29,28 +30,30 @@ export default function Home() {
           </p>
 
           <div className="flex justify-center gap-4">
-            <button className="p-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-sm transition">
-              Mulai Mencari
-            </button>
-            <button className="p-3 bg-gray-200 hover:bg-gray-300 text-gray rounded-md text-sm transition">
-              Tentang Kami
-            </button>
+            <Link href="/search" passHref>
+              <button className="p-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-sm transition">
+                Mulai Mencari
+              </button>
+            </Link>
+
+            <Link href="/about" passHref>
+              <button className="p-3 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-md text-sm transition">
+                Tentang Kami
+              </button>
+            </Link>
           </div>
         </div>
       </main>
-              <footer className="flex items-center justify-center absolute inset-x-0 bottom-0 my-10">
-          <p className="text-xs text-gray-400">
-            {" "}
-            <a
-              href="/"
-              className="underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Kelompok 14
-            </a> © Semua Hak Dilindungi.
-          </p>
-        </footer>
+      <footer className="flex items-center justify-center absolute inset-x-0 bottom-0 my-10">
+        <p className="text-xs text-gray-400">
+          {" "}
+          <Link href="/about" passHref
+          >
+            Kelompok 14
+          </Link>{" "}
+          © Semua Hak Dilindungi.
+        </p>
+      </footer>
     </div>
   );
 }

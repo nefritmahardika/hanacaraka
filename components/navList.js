@@ -1,21 +1,19 @@
+import React from "react";
+import Link from 'next/link';
+
 export default function NavList() {
   return (
-      <ul className="flex flex-col gap-10 flex-row text-sm">
-        <li className="hover:underline">
-          <a href="" target="_self">
-            Beranda
-          </a>
-        </li >
-         <li className="hover:underline">
-          <a href="" target="_self">
-            Pencarian
-          </a>
-        </li>
-        <li className="hover:underline">
-          <a href="" target="_self">
-            Tentang
-          </a>
-        </li>
-      </ul>
+    <ul className="flex gap-10 text-sm">
+      <li className="hover:underline">
+        <Link href="/">Beranda</Link>
+      </li>
+      <li className="hover:underline">
+        <Link href="/search">Pencarian</Link>
+      </li>
+      <li className="hover:underline">
+        <Link href="/about">Tentang</Link>
+      </li>
+    </ul>
   );
 }
+
