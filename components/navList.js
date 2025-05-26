@@ -1,14 +1,19 @@
 export default function NavList() {
   return (
       <ul className="flex flex-col gap-10 flex-row text-sm">
-        <li>
+        <li className="hover:underline">
           <a href="" target="_self">
-            Home
+            Beranda
+          </a>
+        </li >
+         <li className="hover:underline">
+          <a href="" target="_self">
+            Pencarian
           </a>
         </li>
-        <li>
+        <li className="hover:underline">
           <a href="" target="_self">
-            About
+            Tentang
           </a>
         </li>
       </ul>

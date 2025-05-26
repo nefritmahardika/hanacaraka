@@ -7,7 +7,7 @@ export default function NavLogo() {
         <a href="" target="_self">
           <Image src="/icon.svg" alt="Profile" width={20} height={20} />
         </a>
-        <a href="" target="_self" className="font-semibold text-lg">
+        <a href="" target="_self" className="font-semibold text-lg bg-gradient-to-r from-blue-600 to-blue-300 bg-clip-text text-transparent">
           Hanacaraka
         </a>
       </div>
