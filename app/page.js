@@ -1,9 +1,24 @@
+"use client";
+
+import React from "react";
 import NavLogo from "../components/navLogo";
 import NavList from "../components/navList";
 import Welcome from "../components/welcome";
 import Link from "next/link";
+import gsap from "gsap";
+import { useRef } from "react";
+import { useEffect } from "react";
 
 export default function Home() {
+  const captionRef = useRef(null);
+  useEffect(() => {
+    gsap.fromTo(
+      captionRef.current,
+      { opacity: 0, filter: "blur(10px)", scale: 0.5 },
+      { duration: 2 ,opacity: 1, filter: "blur(0px)", scale: 1 }
+    );
+  });
+
   return (
     <div className="font-[family-name:var(--font-geist-sans)]">
       <nav className="container flex flex-wrap items-center justify-between mx-auto text-gray-700 gap-x-5 px-10 py-6">
@@ -12,7 +27,7 @@ export default function Home() {
       </nav>
 
       <main className="max-h-screen my-40 bg-white flex items-center justify-center my-0">
-        <div className="max-w-md lg:max-w-xl text-center">
+        <div ref={captionRef} className="max-w-md lg:max-w-xl text-center">
           <Welcome />
           <p className="text-gray-600 text-sm md:text-md mb-8">
             Hanacaraka merupakan platform search engine aksara Jawa berdasarkan
@@ -47,8 +62,7 @@ export default function Home() {
       <footer className="flex items-center justify-center absolute inset-x-0 bottom-0 my-10">
         <p className="text-xs text-gray-400">
           {" "}
-          <Link href="/about" passHref
-          >
+          <Link href="/about" passHref>
             Kelompok 14
           </Link>{" "}
           © Semua Hak Dilindungi.
