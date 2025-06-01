@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function NavList() {
   return (
-    <ul className="flex gap-10 text-sm">
+    <ul className="flex gap-10 text-xs">
       <li className="hover:underline">
         <Link href="/">Beranda</Link>
       </li>
