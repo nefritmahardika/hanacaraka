@@ -21,14 +21,14 @@ export default function Home() {
   });
 
   return (
-    <div className="font-[family-name:var(--font-geist-sans)]">
+    <div className="font-sans min-h-screen relative pb-32">
       <nav className="container flex flex-wrap items-center justify-between mx-auto text-gray-700 gap-x-5 px-10 py-6">
         <NavLogo />
         <NavList />
       </nav>
 
       <main className="max-h-screen my-40 bg-white flex items-center justify-center my-0">
-        <div ref={captionRef} className="max-w-sm lg:max-w-2xl text-center">
+        <div ref={captionRef} className="max-w-sm lg:max-w-3xl text-center">
           <Welcome />
           <p className="text-gray-600 text-sm md:text-md mb-8">
             Hanacaraka merupakan platform search engine mencari detail cerita

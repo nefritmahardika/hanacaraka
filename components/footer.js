@@ -5,13 +5,13 @@ export default function Footer() {
  <footer className="flex items-center justify-center absolute inset-x-0 bottom-10">
         <p className="text-xs text-gray-400">
           <a
-            href="/"
+            href="/about"
             className="underline"
             target="_blank"
             rel="noopener noreferrer"
           >
             Kelompok 14
-          </a>{" "}
+          </a>{""}
           © Semua Hak Dilindungi.
         </p>
  </footer>
