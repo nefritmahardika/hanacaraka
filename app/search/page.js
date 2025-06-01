@@ -2,6 +2,8 @@
 
 import NavLogo from "../../components/navLogo";
 import NavList from "../../components/navList";
+import Footer from "../../components/footer";
+
 import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 
@@ -179,20 +181,7 @@ const handleSearch = () => {
           </div>
         )}
       </main>
-
-      <footer className="flex items-center justify-center absolute inset-x-0 bottom-0 my-10">
-        <p className="text-xs text-gray-400">
-          <a
-            href="/"
-            className="underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Kelompok 14
-          </a>{" "}
-          © Semua Hak Dilindungi.
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }

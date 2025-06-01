@@ -1,5 +1,6 @@
 import NavLogo from "../../components/navLogo";
 import NavList from "../../components/navList";
+import Footer from "../../components/footer";
 
 export default function Search() {
   return (
@@ -11,19 +12,7 @@ export default function Search() {
 
       <main className="max-h-screen my-40 bg-white flex items-center justify-center my-0">
       </main>
-              <footer className="flex items-center justify-center absolute inset-x-0 bottom-0 my-10">
-          <p className="text-xs text-gray-400">
-            {" "}
-            <a
-              href="/"
-              className="underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Kelompok 14
-            </a> © Semua Hak Dilindungi.
-          </p>
-        </footer>
+      <Footer />
     </div>
   );
 }

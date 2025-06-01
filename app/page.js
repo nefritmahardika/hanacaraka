@@ -4,6 +4,7 @@ import React from "react";
 import NavLogo from "../components/navLogo";
 import NavList from "../components/navList";
 import Welcome from "../components/welcome";
+import Footer from "../components/footer";
 import Link from "next/link";
 import gsap from "gsap";
 import { useRef } from "react";
@@ -15,7 +16,7 @@ export default function Home() {
     gsap.fromTo(
       captionRef.current,
       { opacity: 0, filter: "blur(10px)", scale: 0.5 },
-      { duration: 2 ,opacity: 1, filter: "blur(0px)", scale: 1 }
+      { duration: 2, opacity: 1, filter: "blur(0px)", scale: 1 }
     );
   });
 
@@ -30,7 +31,8 @@ export default function Home() {
         <div ref={captionRef} className="max-w-sm lg:max-w-2xl text-center">
           <Welcome />
           <p className="text-gray-600 text-sm md:text-md mb-8">
-            Hanacaraka merupakan platform search engine mencari detail cerita rakyat jawa lama berdasarkan{" "}
+            Hanacaraka merupakan platform search engine mencari detail cerita
+            rakyat jawa lama berdasarkan{" "}
             <a
               href="https://bintangpusnas.perpusnas.go.id/konten/BKYWMRX8/straatvertoningen-transliterasi-dan-terjemahan-naskah-seni-pertunjukan-jalanan"
               className="text-blue-600 hover:underline"
@@ -45,7 +47,7 @@ export default function Home() {
 
           <div className="flex justify-center gap-4">
             <Link href="/search" passHref>
-              <button className="p-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-sm transition">
+              <button className="p-3 bg-blue-600 bg-blue-600 border border-blue-600 hover:bg-white hover:text-blue-600 text-white rounded-md text-sm transition">
                 Mulai Mencari
               </button>
             </Link>
@@ -58,15 +60,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <footer className="flex items-center justify-center absolute inset-x-0 bottom-0 my-10">
-        <p className="text-xs text-gray-400">
-          {" "}
-          <Link href="/about" passHref>
-            Kelompok 14
-          </Link>{" "}
-          © Semua Hak Dilindungi.
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }
