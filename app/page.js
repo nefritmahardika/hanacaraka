@@ -27,11 +27,10 @@ export default function Home() {
       </nav>
 
       <main className="max-h-screen my-40 bg-white flex items-center justify-center my-0">
-        <div ref={captionRef} className="max-w-md lg:max-w-xl text-center">
+        <div ref={captionRef} className="max-w-sm lg:max-w-2xl text-center">
           <Welcome />
           <p className="text-gray-600 text-sm md:text-md mb-8">
-            Hanacaraka merupakan platform search engine aksara Jawa berdasarkan
-            literatur kuno{" "}
+            Hanacaraka merupakan platform search engine mencari detail cerita rakyat jawa lama berdasarkan{" "}
             <a
               href="https://bintangpusnas.perpusnas.go.id/konten/BKYWMRX8/straatvertoningen-transliterasi-dan-terjemahan-naskah-seni-pertunjukan-jalanan"
               className="text-blue-600 hover:underline"
