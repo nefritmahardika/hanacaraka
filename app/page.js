@@ -30,7 +30,7 @@ export default function Home() {
       <main className="max-h-screen my-40 bg-white flex items-center justify-center my-0">
         <div ref={captionRef} className="max-w-sm lg:max-w-3xl text-center">
           <Welcome />
-          <p className="text-gray-600 text-sm md:text-md mb-8">
+          <p className="text-gray-600 text-sm md:text-md mb-8 mx-10">
             Hanacaraka merupakan platform search engine mencari detail cerita
             rakyat jawa lama berdasarkan{" "}
             <a
