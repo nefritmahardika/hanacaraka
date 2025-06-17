@@ -1,8 +1,8 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
-import NavLogo from "../../components/navLogo";
-import NavList from "../../components/navList";
+import NavLogo from "/components/navLogo";
+import NavList from "/components/navList";
 import gsap from "gsap";
 
 export default function Search() {
@@ -46,12 +46,12 @@ export default function Search() {
   };
 
   // Enhanced function to extract and format story information
-  const formatStoryInfo = (ceritaUri, judulCerita, urutan) => {
+  const formatStoryInfo = (ceritaUri, judul, kalimatUri) => {
     let storyName = "Tidak diketahui";
     
-    // Prioritas: gunakan judulCerita jika ada, jika tidak gunakan dari URI
-    if (judulCerita) {
-      storyName = judulCerita;
+    // Prioritas: gunakan judul jika ada, jika tidak gunakan dari URI cerita
+    if (judul) {
+      storyName = judul;
     } else if (ceritaUri) {
       // Extract the last part after # or /
       const extractedName = ceritaUri.split(/[#/]/).pop();
@@ -64,12 +64,18 @@ export default function Search() {
         .replace(/^\w/, c => c.toUpperCase()); // Capitalize first letter
     }
     
-    // Format dengan urutan jika ada
-    if (urutan) {
-      return `${storyName} - Kalimat ${urutan}`;
+    // Extract kalimat number from URI if available
+    let kalimatInfo = "";
+    if (kalimatUri) {
+      const kalimatMatch = kalimatUri.match(/kalimat[\/_]?(\d+)/i) || 
+                           kalimatUri.match(/sentence[\/_]?(\d+)/i) ||
+                           kalimatUri.match(/(\d+)$/);
+      if (kalimatMatch) {
+        kalimatInfo = ` - Kalimat ${kalimatMatch[1]}`;
+      }
     }
     
-    return storyName;
+    return `${storyName}${kalimatInfo}`;
   };
 
   // Function to get story color based on story name
@@ -150,7 +156,7 @@ export default function Search() {
 
         <form onSubmit={handleSearch} className="flex flex-col sm:flex-row gap-4 w-full max-w-xl mb-8">
           <input
-            placeholder="Masukkan kata kunci (aksara / latin / terjemahan)..."
+            placeholder="Masukkan kata kunci (judul / aksara / latin / terjemahan)..."
             value={keyword}
             onChange={(e) => setKeyword(e.target.value)}
             onKeyPress={handleKeyPress}
@@ -207,7 +213,7 @@ export default function Search() {
             </div>
             
             {result.map((item, i) => {
-              const storyInfo = formatStoryInfo(item.cerita, item.judulCerita, item.urutan);
+              const storyInfo = formatStoryInfo(item.cerita, item.judul, item.kalimat);
               const colorClass = getStoryColor(storyInfo);
               
               return (
@@ -232,7 +238,15 @@ export default function Search() {
                     </div>
                     
                     {/* Content with enhanced styling */}
-                    <div className="space-y-4">
+                  
+
+                                        <div className="space-y-4">
+                      <div className="p-3 bg-gray-50 rounded-lg">
+                        <span className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-1 block">Judul Cerita</span>
+                        <p className="text-lg font-medium text-gray-900 leading-relaxed">
+                          {highlightText(storyInfo, keyword)}
+                        </p>
+                      </div>
                       <div className="p-3 bg-gray-50 rounded-lg">
                         <span className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-1 block">Aksara Jawa</span>
                         <p className="text-lg font-medium text-gray-900 leading-relaxed">
@@ -268,7 +282,7 @@ export default function Search() {
               Belum ada hasil pencarian
             </p>
             <p className="text-sm text-gray-400">
-              Masukkan kata kunci untuk mencari dalam aksara Jawa, latin, atau terjemahan
+              Masukkan kata kunci untuk mencari dalam judul cerita, aksara Jawa, latin, atau terjemahan
             </p>
           </div>
         ) : null}

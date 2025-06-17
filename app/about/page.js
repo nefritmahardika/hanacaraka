@@ -51,6 +51,12 @@ export default function About() {
             </div>
           ))}
         </div>
+        <div className="mt-10">
+          <NavLogo />
+        </div>
+          <p className="mt-4 w-[70%] text-blue-500 text-center">
+Hanacaraka adalah sebuah platform search engine yang dirancang khusus untuk menelusuri, mencari, dan menampilkan detail cerita rakyat Jawa Kuno yang berasal dari naskah-naskah pertunjukan jalanan. Platform ini berbasis pada sumber primer yaitu Straatvertoningen: Transliterasi dan Terjemahan Naskah Seni Pertunjukan Jalanan, sebuah karya akademik yang berisi transliterasi dan terjemahan teks-teks pertunjukan jalanan berbahasa Jawa.
+          </p>
       </main>
 
       <Footer />
