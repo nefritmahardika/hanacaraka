@@ -1,0 +1,281 @@
+@prefix ex: <http://example.org/jawa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:aksara a owl:DatatypeProperty .
+
+ex:bagianDari a owl:ObjectProperty ;
+    rdfs:domain ex:Kalimat ;
+    rdfs:range ex:Cerita .
+
+ex:judul a owl:DatatypeProperty .
+
+ex:kalimat_1 a ex:Kalimat ;
+    ex:aksara "ꦠꦶꦠꦶꦔꦭꦤ꧀ꦥꦸꦤꦶꦏꦄꦁꦒꦺꦤꦶꦥꦸꦤ꧀ꦄꦔꦺꦧꦫꦏꦺꦤ꧀꧈ꦩꦸꦚꦸꦏꦶꦥꦸꦤ꧀ꦢꦶꦥꦸꦚ꧀ꦗꦺꦴꦒꦺꦢꦏꦺꦤ꧀꧈ꦗꦺꦴꦒꦺꦢꦶꦥꦸꦚ꧀ꦕꦫꦕꦤ꧀ꦠꦿꦶꦏ꧀꧈ꦩꦺꦤ꧀ꦢꦺꦠ꧀ꦭꦩ꧀ꦥꦲꦤ꧀ꦥꦺꦠꦶꦭꦚ꧀ꦕꦫꦶꦪꦺꦴꦱ꧀ꦠꦺꦴꦥꦺꦁ" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Topeng_Monyet_gangsa_utuk_ubrul ;
+    ex:latin "Titingalan  punika  anggenipun  angebaraken,  munyukipun  dipun jogedaken, jogedipun cara cantrik, mendet lampahan petilan cariyos topeng" ;
+    ex:terjemahan "Pertunjukan  ini  mempertontonkan  monyet  yang  dibuat  berjoget menyerupai cantrik, dengan  mengambil  fragmen  cerita  topeng" .
+
+ex:kalimat_10 a ex:Kalimat ;
+    ex:aksara "ꦭꦩ꧀ꦥꦲꦶꦥꦸꦤ꧀ꦧꦺꦴꦠꦺꦤ꧀ꦔꦁꦒꦺꦮꦠꦺꦴꦤ꧀꧈ꦗꦭꦫꦤ꧀ꦤꦩꦸꦁꦧꦢꦸꦢꦤ꧀꧈ꦢꦢꦺꦴꦱ꧀ꦆꦁꦒꦶꦃꦤꦩꦸꦁꦧꦁꦱꦤꦶꦥꦸꦤ꧀ꦧꦚꦺꦴꦭꦤ꧀ꦏꦺꦩꦮꦺꦴꦤ꧀꧉" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Tal%C3%A8d%C3%A8k_Monyet_Badutan_gangsa_gumb%C4%95ng ;
+    ex:latin "Lampahipun boten ngangge waton, jalaran namung badudan, dados inggih  namung  bangsanipun  banyolan  kemawon." ;
+    ex:terjemahan "Lakon cerita (cenderung) tidak beraturan sebab hanya badutan sehingga hanya semacam banyolan (spontan) saja" .
+
+ex:kalimat_11 a ex:Kalimat ;
+    ex:aksara "ꦠꦶꦠꦶꦔꦭꦤ꧀ꦥꦸꦤꦶꦏꦫꦸꦩꦶꦪꦶꦤ꧀ꦆꦁꦏꦁꦮꦺꦴꦤ꧀ꦠꦺꦤ꧀ꦈꦒꦶꦆꦁꦔꦪꦺꦴꦒꦾꦏꦂꦠ꧈ꦄꦤꦔꦶꦁꦏꦶꦤ꧀ꦠꦺꦤ꧀-ꦏꦶꦤ꧀ꦠꦺꦤ꧀ꦄꦁꦒꦺꦤꦶꦥꦸꦤ꧀ꦆꦕꦭ꧀ꦱꦩ꧀ꦥꦸꦤ꧀ꦮꦠꦮꦶꦱ꧀꧒꧕ꦠꦲꦸꦤ꧀꧈(ꦢꦸꦩꦸꦒꦶꦠꦲꦸꦤ꧀꧑꧙꧒꧙)" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Tal%C3%A8d%C3%A8k_Monyet_Badutan_gangsa_gumb%C4%95ng ;
+    ex:latin "Titingalan  punika  rumiyin  ingkang wonten ugi ing Ngayogyakarta, ananging kinten-kinten anggenipun ical sampun watawis 25 tahun, (dumugi tahun 1929)" ;
+    ex:terjemahan "Pertunjukan ini dulu ada di Yogyakarta, namun sudah menghilang sekitar 25 tahun (hingga tahun 1929)" .
+
+ex:kalimat_12 a ex:Kalimat ;
+    ex:aksara "ꦠꦁꦒꦥꦤꦶꦥꦸꦤ꧀ꦱꦏꦺꦢꦶꦏ꧀-ꦱꦏꦺꦢꦶꦏꦶꦥꦸꦤ꧀ꦱꦠꦁꦱꦸꦭ꧀꧉" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Tal%C3%A8d%C3%A8k_Monyet_Badutan_gangsa_gumb%C4%95ng ;
+    ex:latin "Tanggapanipun sakedik-sakedikipun satangsul." ;
+    ex:terjemahan " Pertunjukan tersebut berbayar minimal setali (25 sen)" .
+
+ex:kalimat_13 a ex:Kalimat ;
+    ex:aksara "ꦫꦶꦁꦒꦶꦠ꧀ꦩꦸꦚꦸꦏ꧀ꦥꦸꦤꦶꦏꦆꦁꦱꦩꦁꦏꦺꦈꦒꦶꦠꦏ꧀ꦱꦶꦃꦮꦺꦴꦤ꧀ꦠꦺꦤ꧀ꦆꦁꦏꦁꦄꦩ꧀ꦧꦫꦔꦏꦺꦤ꧀꧈ꦄꦤꦔꦶꦁꦏꦎꦠ꧀:ꦗ꦳ꦩꦤ꧀ꦫꦸꦩꦶꦪꦶꦤ꧀ꦥꦸꦤꦶꦏꦭꦩ꧀ꦥꦲꦶꦥꦸꦤ꧀ꦆꦁꦏꦁꦢꦶꦥꦸꦤ꧀ꦠꦶꦫꦸꦕꦫꦶꦪꦺꦴꦱ꧀ꦠꦠꦶꦔꦭꦚ꧀ꦗꦮꦶ꧈ꦱꦥꦸꦤꦶꦏꦆꦁꦏꦁꦢꦶꦥꦸꦤ꧀ꦠꦶꦫꦸꦠꦶꦠꦶꦔꦭꦤ꧀ꦏꦸꦩꦶꦢꦶꦏꦺꦮꦤ꧀" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Tal%C3%A8d%C3%A8k_Monyet_Badutan_gangsa_gumb%C4%95ng ;
+    ex:latin "Ringgit munyuk punika ing samangke ugi taksih wonten ingkang  ambarangaken,  ananging  kaot:  zaman  rumiyin  punika  lampahipun  ingkang  dipun  tiru  cariyos  tatingalan  jawi,  sapunika  ingkang  dipun  tiru  titingalan kumidi kewan" ;
+    ex:terjemahan "Taledek monyet semacam ini masih ada yang mempertontonkan, namun berbeda: pada zaman dulu lakon cerita yang digunakan meniru cerita-cerita Jawa, (sedangkan) lakon cerita yang digunakan saat ini berupa komedi hewan" .
+
+ex:kalimat_14 a ex:Kalimat ;
+    ex:aksara "ꦱꦂꦠꦩꦭꦶꦃꦒꦁꦱꦤꦶꦥꦸꦤ꧀ꦱꦥꦸꦤꦶꦏ:ꦱꦸꦭꦶꦁ꧈ꦠꦿꦺꦧꦁꦱꦂꦠꦗꦺꦢꦺꦴꦂ(ꦧꦺꦢꦸꦒ꧀)ꦄꦭꦶꦠ꧀" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Tal%C3%A8d%C3%A8k_Monyet_Badutan_gangsa_gumb%C4%95ng ;
+    ex:latin " Sarta malih gangsanipun sapunika: suling, trebang sarta jedor (bedug) alit" ;
+    ex:terjemahan "Selain itu, gangsa yang dipakai saat ini: suling, trebang, serta cedor (bedug kecil)" .
+
+ex:kalimat_15 a ex:Kalimat ;
+    ex:aksara "ꦠꦁꦒꦥꦤꦶꦥꦸꦤ꧀ꦆꦁꦏꦁꦠꦸꦩꦿꦥ꧀ꦠꦶꦠꦶꦔꦭꦤ꧀ꦱꦥꦸꦤꦶꦏ꧈ꦄꦥꦺꦱꦶꦥꦸꦤ꧀ꦱꦫꦸꦥꦶꦪꦃ" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Tal%C3%A8d%C3%A8k_Monyet_Badutan_gangsa_gumb%C4%95ng ;
+    ex:latin "Tanggapanipun ingkang tumrap titingalan sapunika, apesipun sarupiah" ;
+    ex:terjemahan "Pertunjukan tersebut (saat ini ) berbayar paling sedikit satu rupiah" .
+
+ex:kalimat_16 a ex:Kalimat ;
+    ex:aksara "ꦠꦶꦠꦶꦔꦭꦤ꧀ꦥꦸꦤꦶꦏꦆꦁꦗ꦳ꦩꦤ꧀ꦏꦶꦤꦢꦢꦺꦴꦱ꧀ꦠꦁꦒꦥꦤ꧀ꦏꦢꦺꦴꦱ꧀ꦱꦭꦶꦩꦿꦲꦶꦁꦧꦫꦔꦤ꧀꧈ꦄꦤꦔꦶꦁꦱꦥꦸꦤꦶꦏꦈꦒꦶꦠꦏ꧀ꦱꦶꦃꦮꦺꦴꦤ꧀ꦠꦺꦤ꧀ꦆꦁꦏꦁꦩꦺꦩ꧀ꦥꦺꦂꦥꦸꦤꦶꦏ꧈ꦤꦩꦸꦁꦏꦺꦩꦮꦺꦴꦤ꧀ꦭꦩ꧀ꦥꦃ-ꦭꦩ꧀ꦥꦲꦶꦥꦸꦤ꧀ꦄꦏꦺꦴꦱꦺꦴꦏ꧀ꦮꦁꦱꦸꦭ꧀꧈ꦫꦸꦩꦶꦪꦶꦤ꧀ꦢꦶꦥꦸꦤ꧀ꦠꦔꦥ꧀꧈ꦱꦥꦸꦤꦶꦏꦱꦌꦁꦒꦺꦤ꧀-ꦌꦁꦒꦺꦤ꧀ꦭꦗꦺꦁꦄꦚ꧀ꦗꦺꦴꦒꦺꦢ꧀" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Badut_Pria_Gangsa_Trebang ;
+    ex:latin "Titingalan  punika  ing  zaman  kina  dados  tanggapan  kados  salimrahing  barangan,  ananging  sapunika  ugi  taksih  wonten  ingkang  memper  punika,  namung   kemawon   lampah-lampahipun   akosok   wangsul,   rumiyin   dipun   tangap,  sapunika  saenggen-enggen  lajeng  anjoged" ;
+    ex:terjemahan "Pertunjukan ini pada zaman dahulu menjadi tontonan yang biasa. Saat ini (saat naskah ditulis) juga masih ada beberapa pertunjukan seperti itu, namun cara  memainkannya  sudah  lain,  Dahulu,  pertunjukan  ini  biasa  dimainkan dimana  saja  lalu  menari-nari" .
+
+ex:kalimat_17 a ex:Kalimat ;
+    ex:aksara "ꦒꦁꦱꦤꦶꦥꦸꦤ꧀ꦠꦿꦺꦧꦁꦱꦲꦏꦺꦤ꧀ꦢꦁ꧈ꦥꦔꦺꦤ꧀ꦢꦔꦶꦥꦸꦥꦸꦤꦶꦏꦠꦺꦤ꧀ꦠꦸꦔꦶꦫꦱ꧀ꦢꦢꦺꦴꦱ꧀ꦠꦸꦏꦁꦚꦺꦁꦒꦏꦶ" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Badut_Pria_Gangsa_Trebang ;
+    ex:latin "Gangsanipun  trebang  saha kendang, pangendangipu punika tentu ngiras dados tukang nyenggaki" ;
+    ex:terjemahan "Gangsa  yang  dimainkan  yaitu  trebang  dan kendang. Pengendangnya juga sekaligus menjadi yang njenggaki" .
+
+ex:kalimat_18 a ex:Kalimat ;
+    ex:aksara "ꦆꦁꦏꦁꦄꦩ꧀ꦧꦫꦁꦭꦶꦩꦿꦲꦶꦥꦸꦤ꧀ꦧꦁꦱꦆꦤ꧀ꦢꦸ꧈ꦆꦁꦒꦶꦃꦥꦸꦤꦶꦏꦧꦻꦴꦁ(ꦧꦿꦸꦮꦁ)ꦢꦶꦥꦸꦤ꧀ꦏꦺꦭꦸꦲꦶꦱꦂꦠꦩꦮꦶꦠꦩ꧀ꦥꦂꦥꦚ꧀ꦗꦁ꧈ꦏꦥꦸꦫꦶꦃꦄꦚ꧀ꦗꦺꦴꦒꦺꦢ꧀꧈ꦔꦁꦒꦺꦩꦻꦤ꧀ꦥꦺꦤ꧀ꦠꦸꦁꦱꦂꦠꦄꦗꦶꦁꦏ꧀ꦭꦏ꧀-ꦗꦶꦁꦏ꧀ꦭꦏ꧀ꦔꦢꦺꦒ꧀꧈ꦩꦮꦶꦢꦶꦥꦸꦤ꧀ꦠꦧꦸꦲꦶꦏ꧀ꦭꦺꦴꦤ꧀ꦠꦺꦴꦔꦤ꧀꧈ꦩꦶꦤꦺꦴꦁꦏꦏꦁꦒꦺꦄꦧ(ꦥꦿꦺꦤ꧀ꦠꦃ)" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Baung ;
+    ex:latin "Ingkang ambarang limrahipun bangsa Indu, inggih punika baung (bruwang) dipun  keluhi  sarta  mawi  tampar  panjang,  kapurih  anjoged,  ngangge  main  pentung  sarta  ajingklak-jingklak  ngadeg,  mawi  dipun  tabuhi  klontongan,  minongka kangge aba (prentah)" ;
+    ex:terjemahan "Pertunjukan  ini  biasanya  dimainkan  oleh  bangsa  Indu,  yaitu  dengan buang (beruang)  dikeluhi dengan  menggunakan tampar panjang,  disuruh untuk berjoged menggunakan tongkat serta berdiri sambil jingkrak-jingkrak, sambil  ditabuhi  klontongan  sebagai  aba-aba  (perintah)" .
+
+ex:kalimat_19 a ex:Kalimat ;
+    ex:aksara "ꦠꦁꦒꦥꦤꦶꦥꦸꦤ꧀ꦱꦠꦺꦔꦃꦫꦸꦥꦶꦪꦃ꧉ꦄꦁꦒꦺꦤꦶꦥꦸꦤ꧀ꦄꦩ꧀ꦧꦫꦁꦠꦸꦫꦸꦠ꧀ꦥꦏꦩ꧀ꦥꦸꦔꦤ꧀" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Baung ;
+    ex:latin "Tanggapanipun satengah rupiah. Anggenipun ambarang turut pakampungan" ;
+    ex:terjemahan "Pertunjukan  ini biasanya dibayar setengah rupiah dan dimainkan sepanjang perkampungan" .
+
+ex:kalimat_2 a ex:Kalimat ;
+    ex:aksara "ꦥꦁꦒꦁꦒꦺꦤꦶꦥꦸꦤ꧀ꦩꦸꦚꦸꦏ꧀ꦮꦻꦴ:ꦠꦺꦴꦥꦺꦁ꧈ꦱꦂꦠꦱꦤꦺꦱ꧀-ꦱꦤꦺꦱꦶꦥꦸꦤ꧀ꦏꦢꦺꦴꦱ꧀ꦱꦕꦫꦤꦶꦁꦠꦶꦠꦶꦔꦭꦤ꧀ꦠꦺꦴꦥꦺꦁꦠꦶꦪꦁ꧉" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Topeng_Monyet_gangsa_utuk_ubrul ;
+    ex:latin "Pangganggenipun  munyuk  wau:  topeng,  sarta  sanes-sanesipun  kados sacaraning titingalan topeng tiyang." ;
+    ex:terjemahan "Kostum monyet tersebut: topeng dan lain-lainnya sebagaimana pertunjukan topeng manusia" .
+
+ex:kalimat_20 a ex:Kalimat ;
+    ex:aksara """ꦠꦶꦠꦶꦔꦭꦤ꧀ꦥꦸꦤꦶꦏꦄꦮꦸꦗꦸꦠ꧀ꦠꦶꦪꦁꦏꦸꦢꦸꦔꦤ꧀ꦆꦁꦱꦶꦫꦃꦆꦔꦺꦩ꧀ꦧꦥꦺꦏ꧀ꦱꦶ꧈ꦠꦶꦪꦁ
+ꦆꦁꦏꦁꦢꦢꦺꦴꦱ꧀ꦄꦩ꧀ꦧꦺꦏ꧀ꦠꦱꦺꦩ꧀ꦥꦿꦶꦠꦤ꧀꧈ꦈꦒꦺꦂꦄꦚ꧀ꦗꦺꦴꦒꦺꦠ꧀꧈ꦠꦩ꧀ꦠꦸꦏꦭꦶꦪꦤ꧀ꦔꦸꦔꦺꦭꦏꦺꦤ꧀
+ꦱꦺꦩ꧀ꦥꦿꦶꦠꦤ꧀꧈ꦈꦔꦺꦭꦶꦥꦸꦤ꧀ꦠꦶꦠ꧀-ꦠꦶꦠ꧀-ꦠꦸꦮꦶꦠ꧀꧈ꦗꦺꦴꦒꦺꦢꦶꦥꦸꦤ꧀ꦭꦶꦚ꧀ꦕꦒ꧀-ꦭꦶꦚ꧀ꦕꦺꦒ꧀꧈ꦢꦶꦥꦸꦤ꧀ꦒꦁꦱꦤꦶ
+ꦏꦺꦤ꧀ꦢꦁ꧈ꦥꦔꦺꦤ꧀ꦢꦔꦶꦥꦸꦤ꧀ꦔꦶꦫꦱ꧀ꦏꦭꦶꦪꦤ꧀ꦚꦺꦁꦒꦏꦶ꧈ꦈꦒꦺꦂꦢꦮꦃꦒꦺꦴꦁ
+ꦱꦺꦁꦒꦏꦶꦥꦸꦤ꧀:ꦏꦥꦶꦢꦺꦴꦤ꧀ꦢꦺꦴꦁ꧈ꦧꦥꦏ꧀ꦢꦶꦱꦺꦴꦁꦒꦭꦺꦮꦁ꧉""" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Paksi_Kapidondong ;
+    ex:latin """Titingalan punika awujut tiyang kudungan ing sirah ingemba peksi, tiyang
+ingkang dados ambekta sempritan, uger anjoget, tamtu kaliyan ngungelaken
+sempritan, ungelipun tit-tit-tuwit, jogedipun lincag-linceg, dipun gangsani
+kendang, pangendangipun ngiras kaliyan nyenggaki, uger dawah gong
+senggakipun: kapidondong, bapak di songga lewang.""" ;
+    ex:terjemahan """Pertunjukan ini berwujud manusia yang berkostum tudung kepala
+menyerupai burung peksi (dara). Orang tersebut membawa sempritan sembari
+berjoged dan tentu sambil membunyikan sempritan, suaranya tit-tit-tuwit,
+jogetannya juga lincah diiringi dengan suara kendang. Pengendangnya
+memainkan kendang sembari njenggaki, salah satunya dengan suara
+gong kapidondong, bapak disangga lewang. Oleh karena itu dinamakan
+kapidondong.""" .
+
+ex:kalimat_21 a ex:Kalimat ;
+    ex:aksara "ꦥꦿꦩꦶꦭꦏꦠꦺꦭꦲꦶꦥꦸꦤ꧀ꦤꦩꦏꦥꦶꦢꦺꦴꦤ꧀ꦢꦺꦴꦁ꧉" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Paksi_Kapidondong ;
+    ex:latin """Pramila katelahipun
+nama kapidondong.""" ;
+    ex:terjemahan "Pertunjukan ini saat ini sudah tidak ada lagi." .
+
+ex:kalimat_22 a ex:Kalimat ;
+    ex:aksara """ꦠꦶꦠꦶꦔꦭꦤ꧀ꦥꦸꦤꦶꦏꦭꦶꦩꦿꦃꦧꦫꦔꦤ꧀ꦫꦶꦁꦒꦶꦠ꧀ꦠꦭꦺꦢꦺꦏ꧀꧈ꦤꦩꦸꦁꦒꦔꦺꦪꦤꦶꦥꦸꦤ꧀
+ꦒꦸꦩ꧀ꦧꦺꦁꦱꦂꦠꦏꦺꦤ꧀ꦢꦁ""" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Wayang_Gumbeng ;
+    ex:latin """Titingalan punika limrah barangan ringgit taledek, namung gangeanipun
+gumbeng sarta kendang""" ;
+    ex:terjemahan """Pertunjukan ini menyerupai pertunjukan wayang tledek, hanya saja
+gangsa yang dimainkan di sini yaitu gumbeng dan kendang.""" .
+
+ex:kalimat_23 a ex:Kalimat ;
+    ex:aksara "ꦒꦺꦤ꧀ꦢꦶꦔꦤꦶꦥꦸꦤ꧀ꦏꦢꦺꦴꦱ꧀ꦒꦺꦴꦁꦱꦭꦶꦩꦿꦃ꧉" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Wayang_Gumbeng ;
+    ex:latin "Gendinganipun kados gongsa limrah." ;
+    ex:terjemahan "Gending yang dimainkan pun seperti gangsa pada umumnya" .
+
+ex:kalimat_24 a ex:Kalimat ;
+    ex:aksara """ꦒꦸꦩ꧀ꦧꦺꦔꦶꦥꦸꦤ꧀
+ꦆꦁꦏꦁꦏꦢꦩꦺꦭ꧀ꦱꦏꦶꦁꦢꦺꦭꦶꦁꦮꦸꦭꦸꦁꦈꦠꦮꦶꦥꦺꦠꦸꦁ꧈ꦩꦶꦭꦶꦃꦆꦁꦏꦁꦄꦒꦺꦁ""" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Wayang_Gumbeng ;
+    ex:latin """Gumbengipun
+ingkang kadamel saking deling wulung utawi petung, milih ingkang ageng.""" ;
+    ex:terjemahan """Gumbeng yang dimainkan
+terbuat dari deling wulung atau petung, dipilih yang besar""" .
+
+ex:kalimat_25 a ex:Kalimat ;
+    ex:aksara "ꦩꦶꦭꦏꦮꦱ꧀ꦠꦤꦤ꧀ꦫꦶꦁꦒꦶꦠ꧀ꦒꦸꦩ꧀ꦧꦺꦁ꧈ꦏꦥꦺꦤ꧀ꦢꦺꦠ꧀ꦱꦏꦶꦁꦒꦁꦱꦤꦶꦥꦸꦤ꧀" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Wayang_Gumbeng ;
+    ex:latin "Mila kawastanan ringgit gumbeng, kapendet saking gangsanipun" ;
+    ex:terjemahan """Nama wayang
+gumbeng diambil dari nama alat yang dimainkan""" .
+
+ex:kalimat_26 a ex:Kalimat ;
+    ex:aksara """ꦠꦶꦔꦭꦤ꧀
+ꦥꦸꦤꦶꦏꦱꦥꦸꦤꦶꦏꦱꦩ꧀ꦥꦸꦤ꧀ꦆꦕꦭ꧀꧉""" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Wayang_Gumbeng ;
+    ex:latin """Tingalan
+punika sapunika sampun ical.""" ;
+    ex:terjemahan """Pertunjukan ini saat
+sekarang sudah hilang.""" .
+
+ex:kalimat_27 a ex:Kalimat ;
+    ex:aksara """ꦧꦫꦔꦤ꧀ꦥꦸꦤꦶꦏꦏꦁꦒꦺꦥꦔꦸꦥꦗꦶꦮꦤꦶꦥꦸꦤ꧀ꦠꦶꦪꦁꦆꦁꦏꦁꦏꦱꦒꦺꦢꦤꦶꦥꦸꦤ꧀
+ꦤꦩꦸꦁꦒꦺꦴꦁꦱꦱꦂꦠꦄꦩ꧀ꦧꦢꦸꦢ꧀ꦱꦮꦠꦮꦶꦱ꧀꧈ꦠꦸꦂꦆꦁꦏꦁꦱꦸꦁꦏꦤ꧀
+ꦚꦩ꧀ꦧꦸꦠ꧀ꦢꦩꦺꦭ꧀ꦄꦮꦿꦠ꧀(ꦄꦁꦏꦠ꧀ꦗꦸꦚ꧀ꦗꦸꦁ)꧉""" ;
+    ex:bagianDari ex:cerita_Anak_Bermain_Tledek_atau_Badut ;
+    ex:latin """Barangan punika kangge pangupa jiwanipun tiyang ingkang kasagedanipun
+namung gongsa sarta ambadud sawatawis, tur ingkang sungkan
+nyambutdamel awrat (angkat junjung). Pramila limrahipun namung sak-
+brayat""" ;
+    ex:terjemahan """Pertunjukan ini dijadikan sarana untuk mencari uang bagi orang yang
+kemampuannya hanya bisa bermain gangsa serta membadut (bertindak
+sebagai badut), juga orang yang kesulitan dalam menjalani pekerjaan yang
+berat-berat (seperti kuli angkat barang) sehingga biasanya hanya sekeluarga
+yang memainkan""" .
+
+ex:kalimat_28 a ex:Kalimat ;
+    ex:aksara """ꦒꦁꦱꦤꦶꦥꦸꦤ꧀ꦠꦿꦺꦧꦁꦱꦲꦏꦺꦤ꧀ꦢꦁ꧈ꦒꦺꦤ꧀ꦢꦶꦔꦶꦥꦸꦤ꧀ꦏꦢꦺꦴꦱ꧀ꦒꦺꦴꦁꦱ
+ꦭꦶꦩꦿꦃꦆꦁꦏꦁꦏꦭꦺꦧꦺꦠ꧀ꦒꦩ꧀ꦥꦶꦭ꧀""" ;
+    ex:bagianDari ex:cerita_Anak_Bermain_Tledek_atau_Badut ;
+    ex:latin """Gangsanipun trebang saha kendang, gendingipun kados gongsa
+limrah ingkang kalebet gampil""" ;
+    ex:terjemahan """Gangsa yang dimainkan yaitu trebang dan kendang,
+dengan kending sebagaimana permainan gangsa pada umumnya dipilih yang
+mudah.""" .
+
+ex:kalimat_29 a ex:Kalimat ;
+    ex:aksara """ꦠ꧀ꦭꦺꦢꦺꦏꦶꦥꦸꦤ꧀ꦩꦔꦁꦒꦺꦏꦢꦺꦴꦱ꧀ꦫꦶꦁꦒꦶꦠ꧀ꦠꦭꦺꦢꦺꦏ꧀
+ꦭꦶꦩꦿꦃ꧈ꦧꦢꦸꦠ꧀ꦥꦸꦤꦶꦏꦤꦩꦸꦁꦱꦏꦗꦺꦔꦶꦥꦸꦤ꧀꧉""" ;
+    ex:bagianDari ex:cerita_Anak_Bermain_Tledek_atau_Badut ;
+    ex:latin """Tledekipun mangangge kados ringgit taledek
+limrah, badut punika namung sakajengipun.""" ;
+    ex:terjemahan """Kostum tledek yang dikenakan pun sebagaimana kostum tledek
+pada umumnya, sedangkan kostum badut hanya a la kadarnya.""" .
+
+ex:kalimat_3 a ex:Kalimat ;
+    ex:aksara "ꦠꦺꦴꦥꦺꦔꦶꦥꦸꦤ꧀ꦆꦁꦏꦁꦏꦢꦩꦺꦭ꧀ꦈꦒꦶꦏꦗꦺꦁꦏꦢꦺꦴꦱ꧀ꦱꦭꦶꦩꦿꦲꦶꦁꦠꦺꦴꦥꦺꦁ" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Topeng_Monyet_gangsa_utuk_ubrul ;
+    ex:latin "Topengipun ingkang kadamel ugi kajeng kados  salimrahing  topeng" ;
+    ex:terjemahan " Topeng  yang  digunakan  pun  juga  (terbuat  dari)  kayu  layaknya topeng  pada  umumnya" .
+
+ex:kalimat_30 a ex:Kalimat ;
+    ex:aksara """ꦥꦠꦿꦥꦶꦥꦸꦤ꧀ꦧꦢꦸꦠ꧀ꦚꦺꦁꦒꦏꦶꦪꦺꦤ꧀
+ꦠꦭꦺꦢꦺꦏ꧀ꦤꦺꦩ꧀ꦧꦁ꧈ꦈꦠꦮꦶꦧꦚꦺꦴꦭꦤ꧀꧈ꦔꦶꦧꦶꦁꦪꦺꦤ꧀ꦥꦶꦤꦸꦗꦸꦄꦚ꧀ꦗꦺꦴꦒꦺꦢ꧀""" ;
+    ex:bagianDari ex:cerita_Anak_Bermain_Tledek_atau_Badut ;
+    ex:latin """Patrapipun badut nyenggaki yen
+taledek nembang, utawi banyolan, ngibing yen pinuju anjoged""" ;
+    ex:terjemahan """Biasanya
+yang bertindak sebagai badut akan nyenggaki saat tledek bernyanyi atau
+menimpali dengan guyonan, atau akan ikut joget jika tledeknya menari.""" .
+
+ex:kalimat_31 a ex:Kalimat ;
+    ex:aksara "ꦄꦁꦒꦺꦤꦶꦥꦸꦤ꧀ꦄꦩ꧀ꦧꦫꦁꦠꦸꦫꦸꦠ꧀ꦥꦕꦶꦤꦤ꧀ꦈꦠꦮꦶꦥꦏꦩ꧀ꦥꦸꦔꦤ꧀꧉" ;
+    ex:bagianDari ex:cerita_Anak_Bermain_Tledek_atau_Badut ;
+    ex:latin "Anggenipun ambarang turut pacinan utawi pakampungan." ;
+    ex:terjemahan """Biasanya pertunjukan ini dimainkan di sepanjang jalan di daerah Pecinan atau
+perkampungan.""" .
+
+ex:kalimat_32 a ex:Kalimat ;
+    ex:aksara """ꦠꦁꦒꦥꦤꦶꦥꦸꦤ꧀ꦱꦢꦱꦱꦺꦤ꧀ꦆꦁ
+ꦢꦭꦺꦩ꧀ꦱꦥꦿꦱꦺꦏꦮꦚ꧀ꦗꦩ꧀꧉""" ;
+    ex:bagianDari ex:cerita_Anak_Bermain_Tledek_atau_Badut ;
+    ex:latin """Tanggapanipun sadasa sen ing
+dalem saprasekawan jam.""" ;
+    ex:terjemahan "Pertunjukannya pun dibayar 10 sen setiap seperempat jam." .
+
+ex:kalimat_4 a ex:Kalimat ;
+    ex:aksara "ꦱꦺꦒꦮꦺꦴꦤ꧀ꦥꦸꦤꦶꦏꦩꦶꦤꦺꦴꦁꦏꦠꦸꦠꦸꦩ꧀ꦥꦏꦤꦶꦥꦸꦤ꧀ꦩꦸꦚꦸꦏ꧀꧈ꦢꦢꦺꦴꦱ꧀ꦱꦸꦱꦸꦭꦶꦲꦶꦁꦏꦸꦢ" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Topeng_Monyet_gangsa_utuk_ubrul ;
+    ex:latin "Segawon  punika  minongka  tutumpakanipun munyuk,  dados  susulihing  kuda" ;
+    ex:terjemahan "Anjing  (dalam  pertunjukan)  bertindak  sebagai kendaraan  monyet  untuk  menggantikan  (atau  merepresentasikan  fungsi) kuda" .
+
+ex:kalimat_5 a ex:Kalimat ;
+    ex:aksara "ꦆꦁꦏꦁꦮꦺꦴꦤ꧀ꦠꦺꦤ꧀ꦧꦫꦔꦤ꧀ꦥꦸꦤꦶꦏꦆꦁꦔꦪꦺꦴꦒꦾꦏꦠ꧈ꦆꦕꦭꦶꦥꦸꦤ꧀ꦢꦸꦩꦸꦒꦶꦱꦥꦸꦤꦶꦏ꧑꧙꧒꧙ꦏꦶꦤ꧀ꦠꦺꦤ꧀-ꦏꦶꦤ꧀ꦠꦺꦤ꧀꧒꧕ꦠꦲꦸꦤꦤ꧀" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Topeng_Monyet_gangsa_utuk_ubrul ;
+    ex:latin "Ingkang  wonten  barangan  punika  ing Ngayogyakata,  icalipun  dumugi  sapunika  1929  kinten-kinten  25  tahunan" ;
+    ex:terjemahan "Pertunjukan ini ada di Yogyakarta, (dan) sudah menghilang sampai saat ini tahun 1929 selama kira-kira 25 tahun" .
+
+ex:kalimat_6 a ex:Kalimat ;
+    ex:aksara "ꦒꦩ꧀ꦧꦂꦥꦸꦤꦶꦏꦤꦺꦫꦔꦏꦺꦤ꧀ꦩꦸꦚꦸꦏ꧀ꦥꦶꦤꦸꦗꦸꦢꦢꦺꦴꦱ꧀ꦥꦺꦤ꧀ꦠꦸꦭ꧀" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Topeng_Monyet_gangsa_utuk_ubrul ;
+    ex:latin "Gambar  punika  nerangaken  munyuk  pinuju  dados  pentul" ;
+    ex:terjemahan "Gambar di atas menjelaskan monyet menjadi penthul (topeng lelucon)" .
+
+ex:kalimat_7 a ex:Kalimat ;
+    ex:aksara "ꦢꦭꦔꦶꦥꦸꦤ꧀ꦄꦚꦺꦥꦺꦁꦠꦩ꧀ꦥꦂꦠꦁꦱꦸꦭꦶꦁꦩꦸꦚꦸꦏ꧀꧈ꦱꦂꦠꦒꦶꦠꦶꦏ꧀ꦆꦁꦏꦁꦏꦁꦒꦺꦔꦧꦤꦶ(ꦄꦔꦗꦿꦶꦃ-ꦄꦗꦿꦶꦲꦶ)ꦩꦸꦚꦸꦏ꧀ꦆꦁꦏꦁꦔꦺꦧꦫꦏꦺꦤ꧀ꦏꦱꦒꦺꦢꦤꦶꦥꦸꦤ꧀" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Topeng_Monyet_gangsa_utuk_ubrul ;
+    ex:latin "Dalangipun anyepeng tampar tangsuling munyuk, sarta gitik ingkang kangge ngabani (angajrih-ajrihi) munyuk ingkang ngebaraken kasagedanipun" ;
+    ex:terjemahan "Dalang memegang tali tampar yang digunakan untuk mengikat monyet, serta tongkat untuk memerintah (dan menakut-nakuti) monyet yang sedang unjuk kebolehan" .
+
+ex:kalimat_8 a ex:Kalimat ;
+    ex:aksara "ꦠꦁꦒꦥꦤꦶꦥꦸꦤ꧀ꦱꦏꦺꦢꦶꦏ꧀-ꦱꦏꦺꦢꦶꦏꦶꦥꦸꦤ꧀ꦱꦠꦺꦔꦃꦫꦸꦥꦶꦪꦃ" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Topeng_Monyet_gangsa_utuk_ubrul ;
+    ex:latin "Tanggapanipun sakedik-sakedikipun satengah rupiah" ;
+    ex:terjemahan "Pertunjukan tersebut berbayar minimal setengah rupiah" .
+
+ex:kalimat_9 a ex:Kalimat ;
+    ex:aksara "ꦠꦶꦠꦶꦔꦭꦤ꧀ꦥꦸꦤꦶꦏꦄꦁꦒꦺꦤꦶꦥꦸꦤ꧀ꦔꦺꦧꦫꦏꦺꦤ꧀ꦏꦱꦒꦺꦢꦤ꧀ꦥꦸꦤ꧀ꦆꦁꦒꦶꦃꦈꦒꦶꦢꦶꦥꦸꦚ꧀ꦗꦺꦴꦒꦺꦢꦏꦺꦤ꧀ꦏꦢꦺꦴꦱ꧀ꦢꦺꦤꦺꦧꦫꦔꦤ꧀ꦠꦺꦴꦥꦺꦁꦩꦸꦚꦸꦏ꧀꧈ꦤꦩꦸꦁꦏꦎꦠꦶꦥꦸꦤ꧀ꦧꦺꦴꦠꦺꦤ꧀ꦩꦮꦶꦠꦺꦴꦥꦺꦁ" ;
+    ex:bagianDari ex:cerita_Pertunjukan_Tal%C3%A8d%C3%A8k_Monyet_Badutan_gangsa_gumb%C4%95ng ;
+    ex:latin "Titingalan  punika  anggenipun  ngebaraken  kasagedanpun  inggih  ugi  dipun  jogedaken kados dene barangan topeng munyuk, namung kaotipun boten mawi topeng" ;
+    ex:terjemahan "Pertunjukan  ini  juga  mempertontonkan  monyet  yang  sedang  unjuk kebolehan sambil dibuat berjoged sebagaimana pertunjukan topeng monyet, hanya  saja  bedanya  (dalam  pertunjukan  ini)  tidak  menggunakan  topeng" .
+
+ex:latin a owl:DatatypeProperty .
+
+ex:terjemahan a owl:DatatypeProperty .
+
+ex:cerita_Pertunjukan_Badut_Pria_Gangsa_Trebang a ex:Cerita ;
+    ex:judul "Pertunjukan Badut Pria Gangsa Trebang" .
+
+ex:cerita_Pertunjukan_Baung a ex:Cerita ;
+    ex:judul "Pertunjukan Baung" .
+
+ex:cerita_Pertunjukan_Paksi_Kapidondong a ex:Cerita ;
+    ex:judul "Pertunjukan Paksi Kapidondong" .
+
+ex:cerita_Pertunjukan_Wayang_Gumbeng a ex:Cerita ;
+    ex:judul "Pertunjukan Wayang Gumbeng" .
+
+ex:cerita_Anak_Bermain_Tledek_atau_Badut a ex:Cerita ;
+    ex:judul "Anak Bermain Tledek atau Badut" .
+
+ex:cerita_Pertunjukan_Tal%C3%A8d%C3%A8k_Monyet_Badutan_gangsa_gumb%C4%95ng a ex:Cerita ;
+    ex:judul "Pertunjukan Talèdèk Monyet Badutan (gangsa gumbĕng)" .
+
+ex:Cerita a owl:Class .
+
+ex:cerita_Pertunjukan_Topeng_Monyet_gangsa_utuk_ubrul a ex:Cerita ;
+    ex:judul "Pertunjukan Topeng Monyet (gangsa utuk ubrul)" .
+
+ex:Kalimat a owl:Class .
+
