@@ -100,7 +100,11 @@ Mendukung pencarian terhadap:
 
 ## 📸 Screenshot
 
-*(Tambahkan screenshot di sini jika ada)*
+<img width="1440" alt="Screenshot 2025-06-18 at 00 14 23" src="https://github.com/user-attachments/assets/73c5daa9-23e3-4e03-bfa8-dbbc883536f4" />
+
+<img width="1440" alt="Screenshot 2025-06-17 at 22 26 49" src="https://github.com/user-attachments/assets/568baf01-e6cc-45fb-9311-c6a8f807947c" />
+
+<img width="1440" alt="Screenshot 2025-06-18 at 00 14 39" src="https://github.com/user-attachments/assets/d07dc634-cf95-4e6b-959d-809806d7192e" />
 
 ---
 
