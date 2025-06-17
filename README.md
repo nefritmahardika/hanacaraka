@@ -27,7 +27,6 @@ Hanacaraka adalah aplikasi website interaktif yang menampilkan cerita-cerita ber
 
 ```
 .
-├── apache-jena-fuseki
 ├── app/
 │   ├── page.js                  # Halaman utama (Home)
 │   ├── about/page.js           # Halaman About
