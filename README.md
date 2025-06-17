@@ -1,6 +1,6 @@
 # 🪷 Hanacaraka
 
-Hanacaraka adalah aplikasi web interaktif yang menampilkan cerita-cerita beraksara Jawa beserta terjemahannya. Aplikasi ini memanfaatkan data semantik berbasis RDF, dan dibangun menggunakan **Next.js**, **React**, **Tailwind CSS**, serta **GSAP** untuk animasi.
+Hanacaraka adalah aplikasi website interaktif yang menampilkan cerita-cerita beraksara Jawa beserta terjemahannya. Aplikasi ini memanfaatkan data semantik berbasis RDF, dan dibangun menggunakan **Next.js**, **React**, **Tailwind CSS**, serta **GSAP** untuk animasi.
 
 ---
 
